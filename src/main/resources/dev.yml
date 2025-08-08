@@ -1,0 +1,54 @@
+# Database
+db:
+  url: jdbc:postgresql://dev-db.example.com:5432/app
+  username: dev_user
+  password: dev_pass
+  pool:
+    size: 10
+
+# API
+api:
+  base:
+    url: https://dev.api.example.com
+  key: dev_key_123
+  timeout: 5000
+
+# Web
+web:
+  base:
+    url: https://dev.example.com
+  browser: chrome
+  headless: false
+
+auth:
+  admin:
+    username: admin
+    password: admin
+  manager:
+    username: manager
+    password: manager
+  user:
+    username: user
+    password: user
+
+database:
+  datastore_1:
+    postgresql:
+      host: localhost
+      port: 5432
+      database: postgres
+      username: postgres
+      password: postgres
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
+      username: mongoUser
+      password: mongoPassword
+  datastore_2:
+    mongodb:
+      host: localhost
+      port: 5432
+      database: postgres
+      username: postgres
+      password: postgres
